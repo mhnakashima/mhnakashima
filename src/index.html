@@ -20,10 +20,10 @@
     <aside class="sidebar">
       <div class="menu tc">
         <div class="avatar">
-          <img class="avatar--image" src="assets/images/avatar.png" alt="My avatar">
+          <img class="avatar--image" src="assets/images/avatar.jpg" alt="My avatar">
         </div>
         <div class="info mt2">
-          <h3 class="mb0 f6 ttu">mhnakashima@gmail.com</h3>
+          <h3 class="mb0 f4 ttu">mhnakashima@gmail.com</h3>
           <span class="f7 ttu">Front-End Engineer</span>
         </div>
         <nav class="mt3 menu--social">
@@ -46,18 +46,16 @@
     <section class="content-site">
       <div class="flex content-available items-center">
         <span class="available flex items-center">
-          <span class='ttu f6 b'>Avaiable for freelas :D</span>
+          <span class='ttu f6 b'>Available for freelas :D</span>
           <span class="ml3 bullet noDisponible"></span>
         </span>
         <span class=" language flex items-center pl2">
-            <button class='language--button mr2 active' value='PT'
-              onClick={onChooseLanguage}>PT</button>
-            <span class="mr2">|</span>
-            <button class='language--button' value='EN'
-              onClick={onChooseLanguage}>EN</button>
-          </span>
+          <button class='language--button mr2 active' value='PT' onClick={onChooseLanguage}>PT</button>
+          <span class="mr2">|</span>
+          <button class='language--button' value='EN' onClick={onChooseLanguage}>EN</button>
+        </span>
       </div>
-      
+
       <div class="content-section about">
         <h2 class="text-subtitle">Sobre</h2>
         <div class="text-paragraph">
@@ -89,8 +87,9 @@
       <div class="content-section experiences">
         <h2 class="text-subtitle">Experiences</h2>
         <div class="list-items">
+
           <div class="list-item">
-            <img alt="Ciandt logo" />
+            <img src="assets/images/companies/ciandt_logo.jpg" alt="Ciandt logo" />
             <div class="list-item-holder">
               <h3 class="text-list-title">Take - Front End Engineer</h3>
               <h4 class="datetime">MAIO. de 2020 (ATUALMENTE)</h4>
@@ -103,7 +102,20 @@
           </div>
 
           <div class="list-item">
-            <img alt="Ciandt logo" />
+            <img src="assets/images/companies/takeblip_logo.jpg" alt="Blip logo" />
+            <div class="list-item-holder">
+              <h3 class="text-list-title">Take - Front End Engineer</h3>
+              <h4 class="datetime">MAIO. de 2020 (ATUALMENTE)</h4>
+              <div class="flags"></div>
+              <div class="text-description">
+                <p>Desenvolvedor Front end de contatos inteligentes, utilizando de uma solução customizada para criar
+                  interações entre pessoas / plataforma.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="list-item">
+            <img src="assets/images/companies/totvs_logo.jpg" alt="TOTVS logo" />
             <div class="list-item-holder">
               <h3 class="text-list-title">TOTVS - Analista de Desenvolvimento</h3>
               <h4 class="datetime">3 anos e 7 meses</h4>
@@ -126,7 +138,7 @@
           </div>
 
           <div class="list-item">
-            <img alt="Ciandt logo" />
+            <img src="assets/images/companies/webaula_logo.jpg" alt="TOTVS logo" />
             <div class="list-item-holder">
               <h3 class="text-list-title">Take - Front End Engineer</h3>
               <h4 class="datetime">MAIO. de 2020 (ATUALMENTE)</h4>
@@ -145,37 +157,34 @@
         <h2 class="text-subtitle">Formation</h2>
         <div class="list-items">
           <div class="list-item">
-            <img alt="Ciandt logo" />
+            <img src="assets/images/formation/pucminas.jpg" alt="Pucminas logo" />
             <div class="list-item-holder">
-              <h3 class="text-list-title">Take - Front End Engineer</h3>
-              <h4 class="datetime">MAIO. de 2020 (ATUALMENTE)</h4>
+              <h3 class="text-list-title">Pucminas - Arquitetura de Software</h3>
+              <h4 class="datetime">Set. 2021 a Dez. 2022 - Pós Graduação</h4>
               <div class="flags"></div>
               <div class="text-description">
-                <p>Desenvolvedor Front end de contatos inteligentes, utilizando de uma solução customizada para criar
-                  interações entre pessoas / plataforma.</p>
+                <p>Iniciativas de inovação, transformação digital e projetos disruptivos em TI apresentam alguns vários
+                  desafios e o design da arquitetura de soluções pode ser grande diferencial para o sucesso do seu
+                  produto ou projeto. Isso faz com que as empresas demandem cada vez mais por arquitetos de soluções
+                  para desempenhar um papel direcionador no ciclo de desenvolvimento de softwares inovadores.</p>
+                <p>Diversas abordagens de arquitetura de solução levando o aluno a entender os Soft
+                  skills necessários ao arquiteto de solução e a aprender a articular produtos e projetos de TI nas mais
+                  diversas perspectivas tecnológicas com as estratégias da empresa. </p>
               </div>
             </div>
           </div>
 
           <div class="list-item">
-            <img alt="Ciandt logo" />
+            <img src="assets/images/formation/pucminas.jpg" alt="Pucminas logo" />
             <div class="list-item-holder">
-              <h3 class="text-list-title">TOTVS - Analista de Desenvolvimento</h3>
-              <h4 class="datetime">3 anos e 7 meses</h4>
+              <h3 class="text-list-title">Pucminas - Sistemas de Informação</h3>
+              <h4 class="datetime">Set. 2011 a Dez. 2020 - Graduação - Bacharelado</h4>
               <div class="flags"></div>
               <div class="text-description">
-                <p>
-                  Desenvolvimento e um Portal / Aplicativo para gestão de rh, desenvolvendo interações, telas, alinhando
-                  as expectativas do cliente.
-                </p>
-                <p>
-                  Atuação no maior portal de Empreendedorismo do Brasil, criando interfaces, aplicativos além de
-                  manuntenção nos sistemas de gerenciamento
-                  de solicitações.</p>
-                <p>
-                  Atuei como scrum master de duas squads ajudando os times na execução de tarefas e oferencendo métricas
-                  para auxiliar tomadas de decisões.
-                </p>
+                <p>Compreender, desenvolver, utilizar e adaptar tecnologias da informação, atuando de maneira ética,
+                  social e humana.</p>
+                <p>Assegurar às organizações as informações e os sistemas necessários para
+                  prover suporte às operações e obter vantagem competitiva.</p>
               </div>
             </div>
           </div>
@@ -184,22 +193,96 @@
       </div>
 
       <div class="content-section portfolio">
-        <h2 class="text-subtitle">Portfolio</h2>
         <div class="mosaic">
+          
           <div class="mosaic-item">
             <img src="assets/images/portfolio/moove.png" alt="Moove logo">
             <div class="mosaic-cover">
               <h2 class="text-list-title">Moove</h2>
               <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor orci diam. Ut scelerisque
-                  sem non turpis tristique pellentesque. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                  Vivamus convallis justo a diam ultricies dignissim. Nullam egestas elementum justo vitae aliquet.
-                  Suspendisse vehicula sollicitudin ante at rutrum. Nullam sed efficitur nulla. Curabitur facilisis
-                  sapien dolor, eget rhoncus nisi eleifend eu. Sed turpis est, pellentesque et dui in, efficitur congue
-                  felis. Duis at lorem aliquet magna luctus fermentum in a nulla. Donec eu aliquet nunc.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
           </div>
+
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mosaic-item">
+            <img src="assets/images/portfolio/moove.png" alt="Moove logo">
+            <div class="mosaic-cover">
+              <h2 class="text-list-title">Moove</h2>
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

@@ -4,6 +4,8 @@
 @import "_grid.scss";
 @import "_menu.scss";
 @import "_statusbar";
+@import "_experiences";
+@import "_portfolio";
 
 body {
     font-family: 'lato';
@@ -84,12 +86,53 @@ main {
         @media screen and (min-width: 991px) {
             padding: 2rem;
         }
-    }
 
+        .text-subtitle {
+            margin-top: 0;
+        }
+
+        .list-items {
+            .list-item {
+
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 50px;
+
+                >img {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                &-holder {
+                    .text-list-title {
+                        margin: 0;
+                    }
+
+                    .datetime {
+                        margin: 0;
+
+                        color: rgba(10, 10, 10, 0.53);
+                        font-family: Oswald;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        &.portfolio{
+            padding: 0;
+        }
+    }
 }
 
 .avatar {
     &--image {
+        max-height: 150px;
+        max-width: 150px;
         overflow: hidden;
         border-radius: 50%;
     }
