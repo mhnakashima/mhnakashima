@@ -35,21 +35,29 @@
         </nav>
         <nav class="menu--main">
           <ul role="menu" class="pa0">
-            <li class="" role="presentation"><a href="#about" aria-label="link to about">About</a></li>
-            <li class="" role="presentation"><a href="#clients" aria-label="link to about">Clients</a></li>
-            <li class="" role="presentation"><a href="#experiences" aria-label="link to about">Experiences</a></li>
-            <li class="" role="presentation"><a href="#formation" aria-label="link to about">Formation</a></li>
+            <li class="" role="presentation"><a href="#about" aria-label="link to about">About /</a></li>
+            <li class="" role="presentation"><a href="#clients" aria-label="link to about">Clients /</a></li>
+            <li class="" role="presentation"><a href="#experiences" aria-label="link to about">Experiences /</a></li>
+            <li class="" role="presentation"><a href="#formation" aria-label="link to about">Formation /</a></li>
           </ul>
         </nav>
       </div>
     </aside>
     <section class="content-site">
-      <div class="content-status">
-        <span class="">Available for Freelas</span>
-        <span class="status available"></span> -
-        <button class="button-noborder">PT</button> |
-        <button class="button-noborder">ENG</button>
+      <div class="flex content-available items-center">
+        <span class="available flex items-center">
+          <span class='ttu f6 b'>Avaiable for freelas :D</span>
+          <span class="ml3 bullet noDisponible"></span>
+        </span>
+        <span class=" language flex items-center pl2">
+            <button class='language--button mr2 active' value='PT'
+              onClick={onChooseLanguage}>PT</button>
+            <span class="mr2">|</span>
+            <button class='language--button' value='EN'
+              onClick={onChooseLanguage}>EN</button>
+          </span>
       </div>
+      
       <div class="content-section about">
         <h2 class="text-subtitle">Sobre</h2>
         <div class="text-paragraph">
