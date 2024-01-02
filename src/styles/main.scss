@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "_fonts.scss";
+@import "_typograph";
 @import "_grid.scss";
 @import "_menu.scss";
 @import "_statusbar";
@@ -64,7 +65,7 @@ main {
         padding: 2rem 0 4.25rem;
 
         @media screen and (max-width: 991px) {
-            justify-content: flex-start;
+            display: none;
         }
 
         @media screen and (min-width: 991px) {
@@ -76,10 +77,13 @@ main {
         margin-bottom: 2rem;
         background-color: #fff;
 
+        @media screen and (max-width: 991px) {
+            padding: 0.8rem;
+        }
+
         @media screen and (min-width: 991px) {
             padding: 2rem;
         }
-
     }
 
 }
