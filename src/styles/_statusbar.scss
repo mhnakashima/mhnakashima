@@ -1,0 +1,26 @@
+.language {
+    &--button {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+            font-weight: bold;
+        }
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
+
+.bullet{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+
+    &.noDisponible {
+        background-color: #F63C3C;
+    }
+}
