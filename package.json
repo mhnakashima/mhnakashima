@@ -1,0 +1,53 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "portfolio front end developer michael nakashima",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/mhnakashima.git"
+  },
+  "keywords": [
+    "site",
+    "portfolio",
+    "front",
+    "end",
+    "front",
+    "dev",
+    "programming"
+  ],
+  "author": "michael nakashima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/mhnakashima/issues"
+  },
+  "homepage": "https://github.com/github.com/mhnakashima#readme",
+  "devDependencies": {
+    "@types/webpack-env": "^1.18.4",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.36.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.10.0"
+  }
+}
