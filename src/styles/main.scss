@@ -1,10 +1,68 @@
-@import "grid.scss";
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_grid.scss";
+@import "_menu.scss";
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'lato';
+    background-color: $base-color;
+
+    @media screen and (min-width: 991px) {
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 991px) {
+        font-size: 20px;
+    }
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+main {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: minmax(312px, 2fr) 10fr;
+    grid-template-areas: 'sidebar site';
+
+    @media screen and (max-width: 991px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'sidebar'
+            'site'
+        ;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 8rem 0 2rem;
+    background-color: #fff;
+
+    @media screen and (max-width: 991px) {
+        padding-top: 3rem;
+        background-color: transparent;
+    }
+}
+
+.content {
+    &-site {
+        grid-area: site;
+        padding: 0 5rem;
+        height: 100vh;
+
+        background-color: $main-background-color;
+
+        @media screen and (max-width: 991px) {
+            padding: 0 2rem;
+        }
+
+        @media screen and (min-width: 991px) {
+            overflow-y: scroll;
+        }
+    }
+}
+
+.avatar {
+    &--image {
+        overflow: hidden;
+        border-radius: 50%;
+    }
 }

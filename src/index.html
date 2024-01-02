@@ -5,23 +5,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Project</title>
+  <title>Michael Nakashima - Portfolio 2.0</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
 </head>
 
 <body>
   <main>
-    <nav class="nav">
-      <div class="avatar">
-        <img src="assets/images/avatar.png" alt="My avatar">
+    <aside class="sidebar">
+      <div class="menu tc">
+        <div class="avatar">
+          <img class="avatar--image" src="assets/images/avatar.png" alt="My avatar">
+        </div>
+        <div class="info mt2">
+          <h3 class="mb0 f6 ttu">mhnakashima@gmail.com</h3>
+          <span class="f7 ttu">Front-End Engineer</span>
+        </div>
+        <nav class="mt3 menu--social">
+          <ul>
+            <li><a class="f7" target="_blank" href="http://www.linkedin.com.br/mhnakashima">linkedin</a></li>
+            <li><a class="f7" target="_blank" href="http://www.github.com/mhnakashima">github</a></li>
+            <li><a class="f7" target="_blank" href="http://www.instagram.com/mhnakashima">instagram</a></li>
+          </ul>
+        </nav>
+        <nav class="menu--main">
+          <ul role="menu" class="pa0">
+            <li class="" role="presentation"><a href="#about" aria-label="link to about">About</a></li>
+            <li class="" role="presentation"><a href="#clients" aria-label="link to about">Clients</a></li>
+            <li class="" role="presentation"><a href="#experiences" aria-label="link to about">Experiences</a></li>
+            <li class="" role="presentation"><a href="#formation" aria-label="link to about">Formation</a></li>
+          </ul>
+        </nav>
       </div>
-      <ul role="menu" class="nav-navigation">
-        <li class="" role="presentation"><a href="#about" aria-label="link to about">About</a></li>
-        <li class="" role="presentation"><a href="#clients" aria-label="link to about">Clients</a></li>
-        <li class="" role="presentation"><a href="#experiences" aria-label="link to about">Experiences</a></li>
-        <li class="" role="presentation"><a href="#formation" aria-label="link to about">Formation</a></li>
-      </ul>
-    </nav>
-    <section class="content">
+    </aside>
+    <section class="content-site">
       <div class="content-status">
         <span class="">Available for Freelas</span>
         <span class="status available"></span> -
@@ -172,7 +194,6 @@
           </div>
         </div>
       </div>
-
 
     </section>
   </main>
