@@ -1,3 +1,5 @@
+@import "_variables";
+
 .text {
     &-subtitle {
         color: #0a0a0a;
@@ -7,10 +9,11 @@
         text-transform: uppercase;
     }
 
-    &-description, &-description p{
+    &-description,
+    &-description p {
         color: rgba(10, 10, 10, 0.53);
         font-family: Lato;
-        font-size: 20px;
+        @include responsive-text();
         font-style: normal;
         font-weight: 300;
     }
@@ -20,6 +23,7 @@
         color: rgba(10, 10, 10, 0.53);
         font-family: Lato;
         font-weight: 300;
+        @include responsive-text();
     }
 
     &-list {
