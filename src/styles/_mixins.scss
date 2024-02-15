@@ -1,0 +1,17 @@
+// Define mixin to set font size based on device
+@mixin responsive-text($base-font-size: 16px, $base-line-height: 1.5) {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+
+    // For tablets
+    @media only screen and (max-width: $breakpoint-desktop) {
+        font-size: $base-font-size * 0.9; // Adjust font size for tablets
+        line-height: $base-line-height * 1.2; // Adjust line height for tablets
+    }
+
+    // For smartphones
+    @media only screen and (max-width: $breakpoint-tablet) {
+        font-size: $base-font-size * 0.8; // Adjust font size for smartphones
+        line-height: $base-line-height * 1.1; // Adjust line height for smartphones
+    }
+}

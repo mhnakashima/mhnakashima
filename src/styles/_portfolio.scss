@@ -1,0 +1,45 @@
+.portfolio {
+
+    .text-subtitle {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .mosaic {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        margin: 120px 0 200px;
+
+        &-item {
+            -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+
+            display: flex;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            background-color: #efefef;
+
+            &:hover {
+                .mosaic-cover {
+                    display: block;
+                    padding: 1rem;
+                }
+            }
+        }
+
+        &-cover {
+            height: 100%;
+            width: 100%;
+
+            background-color: #fff;
+
+            display: none;
+            position: absolute;
+
+            font-size: 16px;
+        }
+    }
+}

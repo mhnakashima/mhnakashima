@@ -1,13 +1,16 @@
-@import "_variables.scss";
-@import "_fonts.scss";
+@import "_variables";
+@import "_mixins";
+@import "_fonts";
 @import "_typograph";
-@import "_grid.scss";
-@import "_menu.scss";
+@import "_grid";
+@import "_menu";
 @import "_statusbar";
+@import "_experiences";
+@import "_portfolio";
 
 body {
-    font-family: 'lato';
     background-color: $base-color;
+    font-family: 'lato';
 
     @media screen and (min-width: 991px) {
         overflow: hidden;
@@ -84,12 +87,69 @@ main {
         @media screen and (min-width: 991px) {
             padding: 2rem;
         }
-    }
 
+        .text-subtitle {
+            margin-top: 0;
+        }
+
+        .list-items {
+            .list-item {
+
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 50px;
+
+                @media screen and (max-width: 991px) {
+                    flex-direction: column;
+                }
+
+                >img {
+                    height: 70px;
+                    width: 70px;
+
+                    @media screen and (max-width: 991px) {
+                        align-self: center;
+                    }
+                }
+
+                &-holder {
+                    .text-list-title {
+                        margin: 0;
+
+                        @media screen and (max-width: 991px) {
+                            text-align: center;
+                        }
+                    }
+
+                    .datetime {
+                        margin: 0;
+
+                        color: rgba(10, 10, 10, 0.53);
+                        font-family: Oswald;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        text-transform: uppercase;
+
+                        @media screen and (max-width: 991px) {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.portfolio{
+            padding: 0;
+        }
+    }
 }
 
 .avatar {
     &--image {
+        max-height: 150px;
+        max-width: 150px;
         overflow: hidden;
         border-radius: 50%;
     }
